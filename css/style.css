@@ -104,6 +104,7 @@ ul {
     color: #000;
     font-size: 14px;
     font-weight: 600;
+    text-wrap: nowrap;
 }
 
 .btmmenusec .main-menu {
@@ -487,9 +488,10 @@ ul {
 /* --------------Footer css---------- */
 footer{
     background-color: #212121;
+    /* padding-bottom: 2rem; */
 }
 footer .ftrhdng{
-    margin: 50px 0 0 50px;
+    margin: 50px 0 0 33px;
 }
 footer .ftrhdng h6{
     font-size: 12px;
@@ -500,7 +502,7 @@ footer .ftrhdng h6{
     text-wrap: nowrap;
 }
 footer .ftrcntnt ul{
-    padding-left: 3rem;
+    padding-left: 2rem;
 }
 
 footer .ftrcntnt ul li a {
@@ -515,4 +517,68 @@ footer .ftrcntnt ul li a {
 }
 footer .ftrcntnt ul li a:hover{
     text-decoration: underline;
+}
+ .ftrcntnt ul li p{
+    color: #fff;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 600;
+    padding-bottom: 0px;
+    text-wrap: nowrap;
+    display: block;
+    margin-bottom: 0;
+}
+.ftr-num{
+    color: blue !important;
+}
+.ftr-num span{
+    color: #fff;
+    cursor: pointer;
+}
+.ftr-num:hover{
+    text-decoration: none !important;
+}
+.hr-line{
+    position: relative;
+}
+.hr-line::before{
+    position: absolute;
+    inset: 0;
+    height: 5rem;
+    width: 1px;
+}
+footer .ftrside{
+    border-left: 1px solid #878787;
+    margin-left: 1opx;
+}
+.footer .ftrside .ftrcntnt ul.ftrmail{
+    padding-left: 2rem !important;
+}
+.bottom-brdr{
+    border-bottom: 1px solid #878787;
+}
+footer .ftr-fst{
+    padding-bottom: 2rem;
+}
+footer .ftr-btm-icon ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0;
+    margin-top: 25px;
+
+}
+footer .ftr-btm-icon ul li a{
+    color: #fff !important;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 600;
+    padding-bottom: 0px;
+    text-wrap: nowrap;
+    /* display: block; */
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+.ftr-btm-img{
+    margin-top: 25px;
 }
