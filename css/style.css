@@ -60,7 +60,7 @@ ul {
 .top-headersec .top-menu ul {
     display: flex;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 15px;
     gap: 40px;
 }
 .form-control{
@@ -240,6 +240,11 @@ ul {
 }
 
 .electronicssec .electr-prdct:hover .elec-img {
+   transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
     transform: scale(1.05);
 }
 
@@ -322,9 +327,11 @@ ul {
     height: 250px;
     width: 250px;
     transition: 0.5s ease-in;
+    margin-left: 15px;
 }
 
 .beautysec .top-deals-box .top-prdct:hover .top-prdct-img img {
+    transition: 0.7s;
     transform: scale(1.05);
 }
 
@@ -487,6 +494,7 @@ ul {
 
 /* --------------Footer css---------- */
 footer{
+    margin-top: 3rem;
     background-color: #212121;
     /* padding-bottom: 2rem; */
 }
@@ -581,4 +589,27 @@ footer .ftr-btm-icon ul li a{
 }
 .ftr-btm-img{
     margin-top: 25px;
+}
+.top-menu .log-btn{
+    transition: 0.3s ease-in;
+    padding: 7px 20px 10px 20px;
+    border-radius: 12px;
+}
+.top-menu ul .log-btn:hover{
+    background-color: #1c41d6;
+}
+.top-menu ul .log-btn:hover, .top-menu ul .log-btn a{
+    color: #fff;
+}
+
+.top-menu ul .log-btn:hover a{
+    color: #fff;
+}
+.top-menu .log-btn:hover
+
+.top-menu{
+    margin-top: -10px;
+}
+.form-control:focus{
+    box-shadow: none;
 }

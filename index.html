@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" />
     <!-- Slic Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
     <!-- Crousel link -->
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
@@ -21,6 +24,8 @@
     <link rel="stylesheet" href="js/custom.js" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
@@ -48,11 +53,11 @@
                 <div class="col-md-5">
                     <div class="top-menu">
                         <ul>
-                            <li>
-                                <i class="bi bi-person-circle"></i><a href="#"> LogIn</a>
+                            <li class="log-btn">
+                                <img src="images/prfl-icon.svg" alt=""><a href="#"> LogIn</a>
                                 <i class="bi bi-chevron-down"></i>
                             </li>
-                            <li><i class="bi bi-cart3"></i><a href="#"> Cart</a></li>
+                            <li><img src="images/cart-icon.svg" alt=""><a href="#"> Cart</a></li>
                             <li>
                                 <img src="images/menu-logo/became-seller.svg" class="img-fluid" alt="" /><a href="#">
                                     Become a Seller</a>
@@ -137,6 +142,7 @@
             </div>
         </div>
     </section>
+    <!-- Slider main container -->
 
     <!-- --------Bottom menu end------- -->
 
@@ -204,13 +210,27 @@
                                 <h3>Best mobiles</h3>
                             </div>
                             <div class="next-btn">
-                                <a href="#"><i class="bi bi-chevron-right"></i></a>
+                                <a href="https://www.flipkart.com/offers-list/best-mobile?screen=dynamic&pk=themeViews%3DBBD23-Mob-best-deals-DT-OMU%3AApp-OMU~widgetType%3DdealCard~contentType%3Dneo"
+                                    target="_blank"><i class="bi bi-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="main-electronics-prdct">
+                            <div class="main-electronics-prdct mobile-slider">
+                                <div class="electr-prdct">
+                                    <a href="#">
+                                        <div class="elec-img">
+                                            <img src="images/faishon/m2.jpeg" alt="" />
+                                        </div>
+                                        <div class="elect-hdng">
+                                            <h6>Top Mirrorless Camera</h6>
+                                        </div>
+                                        <div class="shop-btn">
+                                            <p class="text-center">Shop Now !</p>
+                                        </div>
+                                    </a>
+                                </div>
                                 <div class="electr-prdct">
                                     <a href="#">
                                         <div class="elec-img">
@@ -302,14 +322,15 @@
                             <h3>Top Deals</h3>
                         </div>
                         <div class="beauty-btn">
-                            <a href="#"><i class="bi bi-chevron-right"></i></a>
+                            <a href="https://www.flipkart.com/offers-list/top-deals?screen=dynamic&pk=themeViews%3DLS-TBBD-23-Topbrands%3ADD-new~widgetType%3DdealCard~contentType%3Dneo"
+                                target="_blank"><i class="bi bi-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="top-deals-box">
+                    <div class="top-deals-box top-slider-box">
                         <div class="top-prdct">
                             <a href="#">
                                 <div class="top-prdct-img">
@@ -347,6 +368,17 @@
                             <a href="#">
                                 <div class="top-prdct-img">
                                     <img src="images/top-4.jpeg" alt="" />
+                                </div>
+                                <div class="top-hdng">
+                                    <h6>ADIDAS, Skechers & more</h6>
+                                    <p>Min. 50-80% Off</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="top-prdct">
+                            <a href="#">
+                                <div class="top-prdct-img">
+                                    <img src="images/top-6.jpeg" alt="" />
                                 </div>
                                 <div class="top-hdng">
                                     <h6>ADIDAS, Skechers & more</h6>
@@ -417,11 +449,11 @@
                 <h6>Features Brands</h6>
             </div>
             <div class="ftr-img">
-                    <div class="imgslid">
-                        <a href="#">
-                            <img src="images/features-brand/fb-1.jpeg" class="d-block w-100" alt="" />
-                        </a>
-                    </div>
+                <div class="imgslid">
+                    <a href="#">
+                        <img src="images/features-brand/fb-1.jpeg" class="d-block w-100" alt="" />
+                    </a>
+                </div>
                 <div class="imgslid">
                     <a href="#">
                         <img src="images/features-brand/fb-2.jpeg" class="d-block w-100" alt="" />
@@ -482,7 +514,7 @@
     </section>
 
     <!-- -------------Fuyters banner end------ -->
-    
+
     <!-------------Top Deals on electronics---- -->
 
     <section class="beautysec">
@@ -494,14 +526,15 @@
                             <h3>Top Deals on Electronics</h3>
                         </div>
                         <div class="beauty-btn">
-                            <a href="#"><i class="bi bi-chevron-right"></i></a>
+                            <a href="https://www.flipkart.com/offers-list/top-deals-on-electronics?screen=dynamicpk=themeViews%3DElec-BSD23-OMU-HP-1%3ADT~widgetType%3DdealCard~contentType%3Dneo"
+                                target="_blank"><i class="bi bi-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="top-deals-box">
+                    <div class="top-deals-box electronics-slider">
                         <div class="top-prdct imgslid">
                             <a href="#">
                                 <div class="top-prdct-img">
@@ -552,7 +585,7 @@
                                     <img src="images/electronics-img/el-5.jpeg" alt="" />
                                 </div>
                                 <div class="top-hdng">
-                                    <h6>Top Deals on Gaming Monitors</h6>
+                                    <h6>Top Deals on Gaming Monitor</h6>
                                     <p>From ₹7,899</p>
                                 </div>
                             </a>
@@ -613,14 +646,15 @@
                             <h3>Fashion Best Sellers</h3>
                         </div>
                         <div class="beauty-btn">
-                            <a href="#"><i class="bi bi-chevron-right"></i></a>
+                            <a href="https://www.flipkart.com/offers-list/fashion-best-sellers?screen=dynamic&pk=themeViews%3DLS-TBBD-23-KnockoutDeals%3ADD~widgetType%3DdealCard~contentType%3Dneo"
+                                target="_blank"><i class="bi bi-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="top-deals-box">
+                    <div class="top-deals-box faishion-box-slider">
                         <div class="top-prdct imgslid">
                             <a href="#">
                                 <div class="top-prdct-img">
@@ -687,6 +721,17 @@
                                 </div>
                             </a>
                         </div>
+                        <div class="top-prdct imgslid">
+                            <a href="#">
+                                <div class="top-prdct-img">
+                                    <img src="images/faishon/f1.jpeg" alt="" />
+                                </div>
+                                <div class="top-hdng">
+                                    <h6>NIKE, PUMA & More</h6>
+                                    <p>Min. 40-60% Off</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -707,8 +752,9 @@
                                         <h3>New Year Specail</h3>
                                     </div>
                                     <div class="beauty-btn">
-                                        <a href="#"><i class="bi bi-chevron-right"></i></a>
-                                    </div> 
+                                        <a href="https://www.flipkart.com/offers-list/new-year-specials?screen=dynamic&pk=contentTags%3DNewYear~marketplace%3DFLIPKART~widgetType%3DdealCard~contentType%3DpersonalisedRecommendation%2FC5&marketplace=FLIPKART"
+                                            target="_blank"><i class="bi bi-chevron-right"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -805,8 +851,9 @@
                                         </div>
                                     </a>
                                     <div class="beauty-btn">
-                                        <a href="#"><i class="bi bi-chevron-right"></i></a>
-                                    </div> 
+                                        <a href="https://www.flipkart.com/offers-list/new-styles-for-her?screen=dynamic&pk=contentTags%3DStyles_For_Her~marketplace%3DFLIPKART~widgetType%3DdealCard~contentType%3DpersonalisedRecommendation%2FC5&marketplace=FLIPKART"
+                                            target="_blank"><i class="bi bi-chevron-right"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -888,8 +935,9 @@
                                             <h3>Wedding Specail</h3>
                                         </div>
                                         <div class="beauty-btn">
-                                            <a href="#"><i class="bi bi-chevron-right"></i></a>
-                                        </div> 
+                                            <a href="https://www.flipkart.com/search?q=wedding%20specail&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
+                                                target="_blank"><i class="bi bi-chevron-right"></i></a>
+                                        </div>
                                     </div>
                                 </a>
                             </div>
@@ -1062,12 +1110,24 @@
                                     </div>
                                     <div class="ftrcntnt">
                                         <ul class="ftrmail">
-                                            <li><p>Flipkart Internet Private Limited, </p></li>
-                                            <li><p> Buildings Alyssa, Begonia & </p></li>
-                                            <li><p> Clove Embassy Tech Village, </p></li>
-                                            <li><p> Outer Ring Road, Devarabeesanahalli Village, </p></li>
-                                            <li><p> Bengaluru, 560103, </p></li>
-                                            <li><p> Karnataka, India</p></li>
+                                            <li>
+                                                <p>Flipkart Internet Private Limited, </p>
+                                            </li>
+                                            <li>
+                                                <p> Buildings Alyssa, Begonia & </p>
+                                            </li>
+                                            <li>
+                                                <p> Clove Embassy Tech Village, </p>
+                                            </li>
+                                            <li>
+                                                <p> Outer Ring Road, Devarabeesanahalli Village, </p>
+                                            </li>
+                                            <li>
+                                                <p> Bengaluru, 560103, </p>
+                                            </li>
+                                            <li>
+                                                <p> Karnataka, India</p>
+                                            </li>
                                             <!-- <li><a href="#">Clear Trip</a></li>
                                             <li><a href="#">Corporate Information</a></li> -->
                                         </ul>
@@ -1080,14 +1140,29 @@
                                 </div>
                                 <div class="ftrcntnt">
                                     <ul>
-                                        <li><p>Flipkart Internet Private Limited, </p></li>
-                                        <li><p> Buildings Alyssa, Begonia & </p></li>
-                                        <li><p> Clove Embassy Tech Village, </p></li>
-                                        <li><p> Outer Ring Road, Devarabeesanahalli Village, </p></li>
-                                        <li><p> Bengaluru, 560103, </p></li>
-                                        <li><p> Karnataka, India </p></li>
-                                        <li><p> CIN : U51109KA2012PTC066107 </p></li>
-                                        <li><a href="tel:044-45614700" class="ftr-num"><span>Telephone : </span>044-45614700</a></li>
+                                        <li>
+                                            <p>Flipkart Internet Private Limited, </p>
+                                        </li>
+                                        <li>
+                                            <p> Buildings Alyssa, Begonia & </p>
+                                        </li>
+                                        <li>
+                                            <p> Clove Embassy Tech Village, </p>
+                                        </li>
+                                        <li>
+                                            <p> Outer Ring Road, Devarabeesanahalli Village, </p>
+                                        </li>
+                                        <li>
+                                            <p> Bengaluru, 560103, </p>
+                                        </li>
+                                        <li>
+                                            <p> Karnataka, India </p>
+                                        </li>
+                                        <li>
+                                            <p> CIN : U51109KA2012PTC066107 </p>
+                                        </li>
+                                        <li><a href="tel:044-45614700" class="ftr-num"><span>Telephone :
+                                                </span>044-45614700</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1101,7 +1176,8 @@
                 <div class="col-md-8">
                     <div class="ftr-btm-icon">
                         <ul>
-                            <li><img src="images/ftr-icon.svg" alt=""><a href="#" class="ftr-link"> Became a Seller</a></li>
+                            <li><img src="images/ftr-icon.svg" alt=""><a href="#" class="ftr-link"> Became a Seller</a>
+                            </li>
                             <li><img src="images/ftr-icon1.svg" alt=""><a href="#"> Advertise</a></li>
                             <li><img src="images/ftr-icon2.svg" alt=""><a href="#"> Gift</a></li>
                             <li> <img src="images/ftr-icon3.svg" alt=""><a href="#"> Help</a></li>
@@ -1116,7 +1192,7 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- --------Footer Section Start--------- -->
     <!-- Bootsrap js -->
 
@@ -1149,49 +1225,10 @@
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script>
-        $('.ftr-img').slick({
-            dots: false,
-            infinite: false,
-            speed: 300,
-            maregin:10,
-            nav:true,
-            slidesToShow: 3,
-            slidesToScroll: 2,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true,
-                    },
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                    },
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    },
-                },
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ],
-        });
-        // $(".ftr-img").slick({
-            
-        // });
-    </script>
-    
+    <script src="js/slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+
 </body>
 
 </html>
