@@ -13,7 +13,6 @@ $(".ftr-img").slick({
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: true,
       },
     },
     {
@@ -58,7 +57,6 @@ $(".mobile-slider").slick({
         slidesToShow: 5,
         slidesToScroll: 1,
         infinite: true,
-        dots: true,
       },
     },
     {
@@ -112,7 +110,6 @@ $(".top-slider-box").slick({
           slidesToShow: 5,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
         },
       },
       {
@@ -157,7 +154,6 @@ $(".top-slider-box").slick({
           slidesToShow: 5,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
         },
       },
       {
@@ -243,7 +239,7 @@ $(".top-slider-box").slick({
         settings: {
           slidesToShow: 7,
           slidesToScroll: 1,
-          dots: true,
+          dots: false,
           autoplay: true,
         },
       },

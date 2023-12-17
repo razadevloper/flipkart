@@ -215,5 +215,25 @@
     .top-side-img img{
         height: auto;
     }
+    .mobile-nvbar{
+        justify-content: flex-start;
+        position: relative;
+    }
+    .m-icon{
+        position: absolute;
+        top: 8px;
+        right: 20px;
+    }
+    .m-logo {
+        margin-top: 15px;
+        margin-left: 100px;
+    }
+    .m-srch .topsearch-bar {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .m-icon img {
+        padding-right: 10px;
+    }
 
 }
