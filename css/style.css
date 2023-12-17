@@ -20,7 +20,7 @@ ul {
 
 /*------------ top-header-css----------- */
 .top-headersec {
-    height: 80px;
+    height: auto;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-color: #fff;
 }
@@ -91,10 +91,9 @@ ul {
 
 .btmmenusec .menu-logo {
     margin-left: -5px;
-    padding: 20px;
+    padding: 25px 14px 14px;
     text-align: center;
 }
-
 .btmmenusec .menu-logo .menubtn {
     padding-top: 15px;
     /* font-weight: 700; */
@@ -225,6 +224,7 @@ ul {
 
 .electronicssec .electr-prdct .elect-hdng h6 {
     color: #000000bf;
+    text-wrap: nowrap;
 }
 
 .electronicssec .electr-prdct .shop-btn p {
@@ -612,4 +612,102 @@ footer .ftr-btm-icon ul li a{
 }
 .form-control:focus{
     box-shadow: none;
+}
+.banner-img img{
+    width: 100%;
+}
+/* Mobile navbar */
+.responsive-navbar{
+    display: none;
+}
+.mnav-btn a {
+    background-color: transparent;
+    border: none;
+
+}
+
+.mnav-btn a:hover {
+    background-color: transparent;
+}
+
+.mnav-btn a i {
+    color: #fff;
+    font-size: 32px;
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.mobile-nvbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.m-logo {
+    margin-top: 10px;
+}
+
+.m-logo img {
+    width: 100%;
+    height: 26px;
+    object-fit: contain;
+}
+
+.m-logo-btn {
+    text-decoration: none;
+    /* margin-left: 47px; */
+    font-size: 11px;
+    font-weight: 800;
+    color: #fff;
+    /* margin-top: -8px; */
+    display: flex;
+}
+
+.m-logo-btn img {
+    width: 10px;
+    padding-bottom: 12px;
+}
+
+.responsive-navbar{
+    background-color: #2874f0;
+}
+.m-srch .topsearch-bar{
+    margin-top: 13px;
+}
+.responsive-navbar .mobile-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.m-icon img{
+    padding-right: 30px;
+}
+
+.responsive-navbar .mobile-menu .mobile-nvbar .offcanvas-body .side-menu ul{
+    padding-left: 0;
+}
+.offcanvas-header{
+    background-color: #2874f0;
+}
+.offcanvas-header h5 a, i {
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+}
+.responsive-navbar .mobile-menu .mobile-nvbar .offcanvas-body .side-menu ul li a{
+    font-size: 13px;
+}
+.responsive-navbar .mobile-menu .mobile-nvbar .offcanvas-body .side-menu ul li{
+    padding-bottom: 7px;
+}
+.responsive-navbar .mobile-menu .mobile-nvbar .offcanvas-body .side-menu ul .plus-zone{
+    border-bottom: 0.04px solid rgba(128, 128, 128, 0.653);
+}
+.responsive-navbar .mobile-menu .mobile-nvbar .offcanvas-body .side-menu ul .language{
+    border-top: 0.04px solid rgba(128, 128, 128, 0.653);
+    border-bottom: 0.04px solid rgba(128, 128, 128, 0.653);
 }
