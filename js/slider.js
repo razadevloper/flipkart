@@ -38,10 +38,11 @@ $(".mobile-slider").slick({
   infinite: false,
   speed: 300,
   maregin: 10,
-  nav: true,
   slidesToShow: 5,
   slidesToScroll: 2,
   mobileFirst: true,
+  adaptiveHeight: true,
+  variableHeight: true,
   responsive: [
     {
       breakpoint: 1201,
@@ -80,6 +81,7 @@ $(".mobile-slider").slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
+        mobileFirst: true,
         dots: false,
       },
     },
